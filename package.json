@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "contentlayer build && next build",
-    "dev": "next dev",
-    "start": "next start",
+    "build": "node init && contentlayer build && next build",
+    "dev": "node init && next dev",
+    "start": "node init && next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "typecheck": "contentlayer build && tsc --noEmit",
